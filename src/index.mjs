@@ -1,7 +1,7 @@
 import app from './app.mjs';
 
 const PORT = process.env.PORT || 4000;
-const SERVERHOST = process.env.SERVERHOST || "localhost";
+const SERVERHOST = "0.0.0.0";
 const server = app.listen(PORT, SERVERHOST, () => {
     console.log(`🚀 lite api server is started, running on ${PORT} port..`);
 });

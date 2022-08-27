@@ -10,7 +10,6 @@ FROM node:16-alpine
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT 4000
-ENV SERVERHOST localhost
 COPY --from=deps --chown=node:node /app/node_modules ./node_modules
 COPY --chown=node:node . .
 USER node
