@@ -1,4 +1,8 @@
 import app from './app.mjs';
+import { connectDb } from './config/db.mjs';
+
+// DB Connection
+await connectDb();
 
 const PORT = process.env.PORT || 4000;
 const SERVERHOST = "0.0.0.0";
